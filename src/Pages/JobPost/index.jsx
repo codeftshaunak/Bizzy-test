@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import FirstStep from '../../Components/Jobpost/FirstStep';
+import FirstStep from '../../Components/JobCreate/FirstStep';
 import HomeLayout from '../../Layouts/HomeLayout';
-import SecondStep from '../../Components/Jobpost/SecondStep';
-import FinalStep from '../../Components/Jobpost/FinalStep';
-import Complete from '../../Components/Jobpost/Completed';
+import SecondStep from '../../Components/JobCreate/SecondStep';
+import FinalStep from '../../Components/JobCreate/FinalStep';
+import Complete from '../../Components/JobCreate/Completed';
 
 const JobPost = () => {
     const [step, setStep] = useState(1)

@@ -7,12 +7,13 @@ import Verify from '../Pages/Onboarding/Verify';
 import JoinCard from '../Pages/Onboarding/JoinCard';
 import Home from '../Pages/Home';
 import JobPost from '../Pages/JobPost';
+import JobDetails from '../Components/JobDetails/JobDetails';
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/" element={<JobDetails />} />
                 <Route exact path="/login" element={<Login />} />
                 <Route exact path="/freelancersignup" element={<ClientSignUp />} />
                 <Route exact path="/clintsignup" element={<FreelancerSignUp />} />

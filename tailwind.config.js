@@ -80,6 +80,18 @@ module.exports = {
         // FOREGROUND
         'fg-disabled': '#D1D5DB',
         'fg-brand': '#16A34A',
+        'primary': '#22C55E',
+        'secondary': '#FFFFFF',
+        'tertiary': '#D1D5DB',
+        green: {
+          200: '#F0FDF4',
+          600: '#16A34A',
+        },
+        gray: {
+          100: '#F9FAFB',
+          200: '#9CA3AF',
+          300: '#6B7280'
+        }
       },
     },
   },
