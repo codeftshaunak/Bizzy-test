@@ -1,18 +1,29 @@
 import React from 'react'
 import HomeLayout from '../../Layouts/HomeLayout';
 import { Link } from 'react-router-dom';
+import { Button, HStack } from '@chakra-ui/react';
 
 const Home = () => {
     return (
         <HomeLayout>
-            <Link to="/login">Login</Link>
-            <Link to="/freelancersignup">SignUp For New Opportunity</Link>
-            <Link to="/clintsignup">SignUp For Hire</Link>
-            <Link to="/joincard"></Link>
-            <Link to="/verify"></Link>
-            <Link to="/onboarding">On-Boarding</Link>
-            <Link to="/create-job">Create New Job</Link>
-            <Link to="/apply-job">Apply To The Job</Link>
+            <br />
+            <HStack gap={"10"} flexWrap={"wrap"} justifyContent={"center"}>
+                <Link to="/login">
+                    <Button>Login</Button>
+                </Link>
+                <Link to="/freelancersignup">
+                    <Button>SignUp For New Opportunity</Button>
+                </Link>
+                <Link to="/clintsignup">
+                    <Button>
+                        SignUp For Hire
+                    </Button>
+                </Link>
+
+                <Link to="/onboarding"><Button>On-Boarding</Button></Link>
+                <Link to="/create-job"><Button>Create New Job</Button></Link>
+                <Link to="/apply-job"><Button>Apply To The Job</Button></Link>
+            </HStack>
         </HomeLayout>
     )
 }

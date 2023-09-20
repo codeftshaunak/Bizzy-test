@@ -18,8 +18,6 @@ const Router = () => {
                 <Route exact path="/login" element={<Login />} />
                 <Route exact path="/freelancersignup" element={<ClientSignUp />} />
                 <Route exact path="/clintsignup" element={<FreelancerSignUp />} />
-                <Route exact path="/joincard" element={<JoinCard />} />
-                <Route exact path="/verify" element={<Verify />} />
                 <Route exact path="/onboarding" element={<Onboarding />} />
 
                 <Route exact path="/create-job" element={<JobPost />} />
