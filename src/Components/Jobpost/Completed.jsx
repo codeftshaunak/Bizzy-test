@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-function Complete() {
+function Complete({ setStep }) {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className='mt-16 max-w-screen-xl mx-auto'>
@@ -75,14 +78,14 @@ function Complete() {
                     <div className='flex justify-between items-center gap-6'>
                         <div className='w-[191px] h-9 flex-col justify-start items-start gap-2.5 inline-flex'>
                             <div className='self-stretch grow shrink basis-0 px-3 py-2 bg-gray-50 rounded-md shadow border border-gray-300 justify-center items-center gap-1 inline-flex'>
-                                <div className="text-center text-gray-700 text-sm font-medium font-['SF Pro Text'] leading-tight">
+                                <div className="text-center text-gray-700 text-sm font-medium font-['SF Pro Text'] leading-tight cursor-pointer" onClick={() => setStep(1)}>
                                     Create New Job Post
                                 </div>
                             </div>
                         </div>
 
                         <div className='w-[191px] h-9 flex-col justify-start items-start gap-2.5 inline-flex'>
-                            <div className='self-stretch h-9 px-3 py-2 bg-green-500 rounded-md shadow justify-center items-center gap-1 inline-flex'>
+                            <div className='self-stretch h-9 px-3 py-2 bg-green-500 rounded-md shadow justify-center items-center gap-1 inline-flex cursor-pointer' onClick={() => navigate("/")}>
                                 <div className="text-center text-white text-sm font-medium font-['SF Pro Text'] leading-tight">
                                     Back to Home
                                 </div>

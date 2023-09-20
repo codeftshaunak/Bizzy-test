@@ -48,7 +48,7 @@ function Step({ step, description, active, finalStep, complete }) {
     )
 }
 
-function FinalStep() {
+function FinalStep({ setStep }) {
     return (
         <>
             <div className='flex mt-16 max-w-screen-xl mx-auto justify-between'>
@@ -116,7 +116,7 @@ function FinalStep() {
 
                     <button className='w-[136px] h-9 flex-col justify-start items-start gap-2.5 inline-flex'>
                         <div className='self-stretch h-9 px-3 py-2 bg-green-500 rounded-md shadow justify-center items-center gap-1 inline-flex'>
-                            <div className="text-center text-white text-sm font-medium font-['SF Pro Text'] leading-tight">
+                            <div className="text-center text-white text-sm font-medium font-['SF Pro Text'] leading-tight" onClick={() => setStep(4)}>
                                 Save & Continue
                             </div>
                         </div>
