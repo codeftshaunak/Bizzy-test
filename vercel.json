@@ -1,0 +1,11 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/login", "dest": "/" },
+      { "src": "/clintsignup", "dest": "/" },
+      { "src": "/freelancersignup", "dest": "/" },
+      { "src": "/onboarding", "dest": "/" },
+      { "src": "/create-job", "dest": "/" },
+      { "src": "/apply-job", "dest": "/" }
+    ]
+  }
