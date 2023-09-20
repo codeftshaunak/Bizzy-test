@@ -3,7 +3,7 @@ import OnbardingCardLayout from '../../Layouts/CardLayout/OnbardingCardLayout'
 import { Box, HStack, Radio, Text, VStack } from '@chakra-ui/react'
 import CTAButton from '../../Components/CTAButton'
 
-const JoinCard = () => {
+const JoinCard = ({ setPage }) => {
     return (
         <OnbardingCardLayout title="Join as a client or freelancer" width="550px" gap="10">
             <HStack>
@@ -193,7 +193,7 @@ const JoinCard = () => {
                 </Box>
             </HStack>
             <VStack width={"100%"} gap={"5"}>
-                <CTAButton fontWeight="500" text="Apply as a Freelancer" color="#fff" fontSize="1rem" bg="var(--primarycolor)" width="100%" height="2.5rem" />
+                <CTAButton fontWeight="500" text="Apply as a Freelancer" color="#fff" fontSize="1rem" bg="var(--primarycolor)" width="100%" height="2.5rem" onClick={() => setPage(3)} />
                 <Text fontWeight={"500"}>Already Have Account? <span className='text-[var(--primarytextcolor)]'>Login</span></Text>
             </VStack>
         </OnbardingCardLayout>

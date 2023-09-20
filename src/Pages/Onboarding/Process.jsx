@@ -6,7 +6,7 @@ import { TbClick, TbReceipt } from 'react-icons/tb';
 import { IoIosAddCircleOutline } from 'react-icons/io';
 import CTAButton from '../../Components/CTAButton';
 
-const Process = () => {
+const Process = ({ setPageU }) => {
     const [page, setPage] = useState(1);
 
     return (
@@ -84,7 +84,7 @@ const Process = () => {
                     <Checkbox colorScheme='green' >
                         Nothing to add? Check the box and keep going.
                     </Checkbox>
-                    <Button fontWeight="500" color="#fff" fontSize="1rem" bg="var(--primarycolor)" height="2.5rem" transition={"0.3s ease-in-out"} _hover={{ border: "1px solid var(--primarycolor)", backgroundColor: "var(--primarysoftbg)", color: "var(--primarytext)" }} onClick={() => setPage(1)}>Save & Continue</Button>
+                    <Button fontWeight="500" color="#fff" fontSize="1rem" bg="var(--primarycolor)" height="2.5rem" transition={"0.3s ease-in-out"} _hover={{ border: "1px solid var(--primarycolor)", backgroundColor: "var(--primarysoftbg)", color: "var(--primarytext)" }} onClick={() => setPageU(1)}>Save & Continue</Button>
                 </VStack>
             )}
         </OnboardingProcess>

@@ -4,7 +4,7 @@ import { Box, HStack, Radio, Text, VStack } from '@chakra-ui/react'
 import CTAButton from '../../Components/CTAButton'
 import { BsChevronDown } from 'react-icons/bs'
 
-const Verify = () => {
+const Verify = ({ setPage }) => {
     return (
         <OnbardingCardLayout width="600px">
             <VStack gap={"5"}>
@@ -35,7 +35,7 @@ const Verify = () => {
 
                 <HStack justifyContent={"space-evenly"} width={"100%"} gap={"5"}>
                     <CTAButton fontWeight="500" text="Resend Verification Email" color="var(--primarytext)" border="1px solid var(--bordersecondary)" fontSize="1rem" bg="var(--secondarycolor)" width="100%" height="2.5rem" />
-                    <CTAButton fontWeight="500" text="Go to Gmail Inbox" color="#fff" fontSize="1rem" bg="var(--primarycolor)" width="100%" height="2.5rem" />
+                    <CTAButton fontWeight="500" text="Go to Gmail Inbox" color="#fff" fontSize="1rem" bg="var(--primarycolor)" width="100%" height="2.5rem" onClick={() => setPage(4)} />
                 </HStack>
             </VStack>
         </OnbardingCardLayout>

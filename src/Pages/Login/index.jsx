@@ -8,7 +8,7 @@ import Divider from '../../Components/Divider/Divider';
 import OnbardingCardLayout from '../../Layouts/CardLayout/OnbardingCardLayout';
 
 
-const Login = () => {
+const Login = ({ setPage }) => {
     const iconsStyle = {
         fontSize: "1.5rem",
         padding: "0.4rem",
@@ -37,7 +37,7 @@ const Login = () => {
                         padding={"0.5rem 0.5rem"}
                     />
                 </Flex>
-                <CTAButton text="Continue with Email" bg="var(--primarycolor)" color="#ffff" fontWeight="500" height="2.5rem" borderRadius="5px" fontSize="1rem" />
+                <CTAButton text="Continue with Email" bg="var(--primarycolor)" color="#ffff" fontWeight="500" height="2.5rem" borderRadius="5px" fontSize="1rem" onClick={() => setPage(2)} />
                 <Divider text="Or" dwidth="180px" />
                 <HStack justifyContent={"space-between"} width={"100%"}>
                     <Box style={iconsStyle} color="#3789f4">
