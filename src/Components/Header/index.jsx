@@ -64,7 +64,7 @@ const Header = () => {
             >
 
                 <HStack justifyContent={"space-between"} width={"40%"}>
-                    <Text color={"#22C55E"} fontWeight={"600"} fontSize={"25px"}>Bizzzy</Text>
+                    <Text color={"#22C55E"} fontWeight={"600"} fontSize={"25px"} onClick={() => navigate("/")} cursor={"pointer"}>Bizzzy</Text>
                     <HStack justifyContent={"space-around"} width={"80%"}>
                         <Box style={boxStyle}>
                             <Text>Find Talent</Text>

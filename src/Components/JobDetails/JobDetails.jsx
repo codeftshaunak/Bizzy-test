@@ -1,6 +1,6 @@
 import React from 'react'
 
-const JobDetails = () => {
+const JobDetails = ({ setPage }) => {
     return (
         <div>
             <div className="py-2 px-40">
@@ -21,7 +21,7 @@ const JobDetails = () => {
                                 <div className="flex gap-2"><img src="icons/user.svg" alt="user" /> <div className='text-gray-300'>Expert</div></div>
                             </div>
                         </div>
-                        <button className="bg-primary text-secondary rounded h-[36px] px-4">Apply for this Job</button>
+                        <button className="bg-primary text-secondary rounded h-[36px] px-4" onClick={() => setPage(2)}>Apply for this Job</button>
                     </div>
                 </div>
                 <div className="w-full flex justify-between">

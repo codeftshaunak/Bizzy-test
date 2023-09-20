@@ -1,6 +1,6 @@
 import React from 'react'
 
-const JobApply = () => {
+const JobApply = ({ setPage }) => {
     return (
         <div>
             <div className="py-2 px-40">
@@ -82,7 +82,7 @@ const JobApply = () => {
                                     <input type="file" name="file_upload" class="hidden" />
                                 </label>
                             </div>
-                            <button className="bg-primary text-secondary rounded h-[36px] px-4 mt-4">Submit Proposal</button>
+                            <button className="bg-primary text-secondary rounded h-[36px] px-4 mt-4" onClick={() => setPage(1)}>Submit Proposal</button>
                         </div>
                     </div>
                 </div>
