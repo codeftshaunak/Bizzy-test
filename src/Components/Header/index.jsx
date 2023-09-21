@@ -9,12 +9,7 @@ import {
     Text,
     VStack,
 } from "@chakra-ui/react";
-import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
-import { Link, useNavigate } from "react-router-dom";
-import { HiOutlineUser } from "react-icons/hi";
-import { FiChevronDown } from "react-icons/fi";
-import { useEffect, useState } from "react";
-import FullContainer from "../FullContainer";
+import { useNavigate } from "react-router-dom";
 import CTAButton from "../CTAButton";
 
 import {

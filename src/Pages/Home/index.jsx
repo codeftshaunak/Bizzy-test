@@ -2,12 +2,12 @@ import React from 'react'
 import HomeLayout from '../../Layouts/HomeLayout';
 import { Link } from 'react-router-dom';
 import { Button, HStack } from '@chakra-ui/react';
+import HomeComp from './HomeComp';
 
 const Home = () => {
     return (
         <HomeLayout>
-            <br />
-            <HStack gap={"10"} flexWrap={"wrap"} justifyContent={"center"}>
+            {/* <HStack gap={"10"} flexWrap={"wrap"} justifyContent={"center"}>
                 <Link to="/login">
                     <Button backgroundColor={"var(--primarycolor)"}>Login</Button>
                 </Link>
@@ -28,7 +28,8 @@ const Home = () => {
                 <Link to="/userprofile-setting"><Button backgroundColor={"var(--primarycolor)"}>Profile Setting</Button></Link>
 
 
-            </HStack>
+            </HStack> */}
+            <HomeComp />
         </HomeLayout>
     )
 }
