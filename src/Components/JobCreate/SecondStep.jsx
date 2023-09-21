@@ -1,3 +1,4 @@
+import { HStack } from '@chakra-ui/react';
 import React from 'react'
 
 function Step({ step, description, active, finalStep, complete }) {
@@ -51,7 +52,7 @@ function Step({ step, description, active, finalStep, complete }) {
 function SecondStep({ setStep }) {
     return (
         <>
-            <div className='flex mt-16 max-w-screen-xl mx-auto justify-between'>
+            <HStack justifyContent={"space-around"} width={"full"} alignItems={"flex-start"}>
                 <div className='w-[169px] h-[261px] flex-col justify-start items-start inline-flex'>
                     <Step step={1} description={'Basic Information'} complete />
                     <Step step={2} description={'Experience'} active />
@@ -276,7 +277,7 @@ function SecondStep({ setStep }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </HStack>
         </>
     )
 }
