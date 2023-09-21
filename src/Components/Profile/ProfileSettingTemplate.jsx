@@ -1,7 +1,6 @@
 import React from "react";
 import ProfileContainer from "./ProfileContainer";
 import { BsChevronRight } from "react-icons/bs";
-// import ProfileSetting from "./ProfileSetting";
 import PaymentMethod from "./PaymentMethod";
 import ContactSettings from "./ContactSettings";
 import DesktopNotification from "./DesktopNotification";
@@ -54,11 +53,10 @@ const ProfileSettingTemplate = ({ children }) => {
             <SettingsNav title={"Password and Security"} />
           </div>
           <div className="flex flex-col flex-[2] border-[1px]   border-[#D1D5DB] rounded-lg">
-            {/* <ProfileSetting /> */}
-            {/* <PaymentMethod /> */}
-            {/* <ContactSettings /> */}
-            {/* {<DesktopNotification />} */}
             <Security />
+            {/* <PaymentMethod />
+            <ContactSettings />
+            <DesktopNotification /> */}
           </div>
         </div>
       </div>
