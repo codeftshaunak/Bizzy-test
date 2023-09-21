@@ -130,6 +130,7 @@ import {
 // };
 
 export const Header = () => {
+    const navigate = useNavigate();
     const boxStyle = {
         display: "flex",
         alignItems: "center",
@@ -141,7 +142,7 @@ export const Header = () => {
         <div className=" w-full  shadow-slate-700 border-b-[1px]  ">
             <div className="flex w-[90%] mx-auto justify-between py-4 ">
                 <div className="flex w-full items-baseline gap-[40px] justify-start">
-                    <p className=" text-[22px] font-bold text-green-500 ">Bizzzy</p>
+                    <p className=" text-[22px] font-bold text-green-500 cursor-pointer" onClick={() => navigate("/")}>Bizzzy</p>
                     <div className="flex gap-[20px]">
                         <NavItem title={"Find Work"} />
                         <NavItem title={"My Jobs"} />
