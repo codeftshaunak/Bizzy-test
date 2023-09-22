@@ -11,6 +11,7 @@ import ApplyJob from '../Pages/ApplyJob';
 import JobDetails from '../Components/JobDetails/JobDetails';
 import { Profile, ProfileSetting } from '../Pages/Profile';
 import FindJob from '../Pages/FindJob';
+import Message from '../Pages/Message';
 
 const Router = () => {
     return (
@@ -25,6 +26,8 @@ const Router = () => {
                 <Route exact path="/create-job" element={<JobPost />} />
                 <Route exact path="/find-job" element={<FindJob />} />
                 <Route exact path="/apply-job" element={<ApplyJob />} />
+
+                <Route exact path="/messages" element={<Message />} />
 
                 <Route exact path="/userprofile" element={<Profile />} />
                 <Route exact path="/userprofile-setting" element={<ProfileSetting />} />
