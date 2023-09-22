@@ -10,6 +10,7 @@ import JobPost from '../Pages/JobPost';
 import ApplyJob from '../Pages/ApplyJob';
 import JobDetails from '../Components/JobDetails/JobDetails';
 import { Profile, ProfileSetting } from '../Pages/Profile';
+import FindJob from '../Pages/FindJob';
 
 const Router = () => {
     return (
@@ -22,7 +23,7 @@ const Router = () => {
                 <Route exact path="/onboarding" element={<Onboarding />} />
 
                 <Route exact path="/create-job" element={<JobPost />} />
-
+                <Route exact path="/find-job" element={<FindJob />} />
                 <Route exact path="/apply-job" element={<ApplyJob />} />
 
                 <Route exact path="/userprofile" element={<Profile />} />
