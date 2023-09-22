@@ -60,7 +60,7 @@ function ReviewCard() {
                 <StarIcon />
                 <StarIcon />
             </div>
-            <div className="w-[372px] text-gray-500 text-xl font-medium font-['Lato'] leading-loose">
+            <div className="w-[372px] text-gray-600 text-xl font-medium font-['Lato'] leading-loose">
                 For businesses with diverse services and offerings, our multi-page
                 websites ensure every aspect of your company shines.
             </div>
@@ -75,7 +75,7 @@ function FAQCard({ question, answer }) {
     return (
         <div className='w-[640px]  p-6 bg-white rounded-[20px] border border-gray-300 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="text-black text-2xl font-['SF Pro']">{question}</div>
-            <div className="w-[592px] text-gray-500 text-xl font-normal font-['Lato'] leading-loose">
+            <div className="w-[592px] text-gray-600 text-xl font-normal font-['Lato'] leading-loose">
                 {answer}
             </div>
         </div>
@@ -487,7 +487,7 @@ function HomeComp() {
                                         See Work as it’s Done
                                     </div>
 
-                                    <div className="w-[469px] text-gray-500 text-xl font-medium font-['Lato'] leading-loose">
+                                    <div className="w-[469px] text-gray-600 text-xl font-medium font-['Lato'] leading-loose">
                                         Check in on your contractors as easily as if you were in the
                                         same office.
                                     </div>
@@ -502,7 +502,7 @@ function HomeComp() {
                                     <div className="text-black text-[28px] font-['SF Pro']">
                                         Build a Team of Experts
                                     </div>
-                                    <div className="w-[469px] text-gray-500 text-xl font-medium font-['Lato'] leading-loose">
+                                    <div className="w-[469px] text-gray-600 text-xl font-medium font-['Lato'] leading-loose">
                                         Check in on your contractors as easily as if you were in the
                                         same office.
                                     </div>
@@ -517,7 +517,7 @@ function HomeComp() {
                                     <div className="text-black text-[28px] font-['SF Pro']">
                                         Eliminate Payroll Hassle
                                     </div>
-                                    <div className="w-[469px] text-gray-500 text-xl font-medium font-['Lato'] leading-loose">
+                                    <div className="w-[469px] text-gray-600 text-xl font-medium font-['Lato'] leading-loose">
                                         Check in on your contractors as easily as if you were in the
                                         same office.
                                     </div>
