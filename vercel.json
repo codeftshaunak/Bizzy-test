@@ -8,7 +8,6 @@
       { "src": "/create-job", "dest": "/" },
       { "src": "/apply-job", "dest": "/" },
       { "src": "/find-job", "dest": "/" },
-      { "src": "/apply-job", "dest": "/" },
       { "src": "/messages", "dest": "/" },
       { "src": "/userprofile", "dest": "/" },
       { "src": "/userprofile-setting", "dest": "/" }
